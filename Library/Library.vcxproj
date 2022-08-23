@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{6A1CEADF-5A70-4451-BDBD-2717F6B6862B}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Library</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Model\ReadersCollection.cpp" />
+    <ClCompile Include="UI\Authors\AddAuthor.cpp" />
+    <ClCompile Include="UI\Authors\ChangeAuthorsName.cpp" />
+    <ClCompile Include="UI\Authors\ConfirmDeletingAuthor.cpp" />
+    <ClCompile Include="UI\Authors\AuthorsMenu.cpp" />
+    <ClCompile Include="UI\BooksStorage\AddBookRecord.cpp" />
+    <ClCompile Include="UI\BooksStorage\ChangeBookLocation.cpp" />
+    <ClCompile Include="UI\BooksStorage\ChangeRecordCount.cpp" />
+    <ClCompile Include="UI\BooksStorage\ChangeRecordId.cpp" />
+    <ClCompile Include="UI\BooksStorage\BooksStorageMenu.cpp" />
+    <ClCompile Include="UI\BooksStorage\ConfirmBookRecordDeleting.cpp" />
+    <ClCompile Include="UI\Books\AddBook.cpp" />
+    <ClCompile Include="UI\Books\ChangeBookAuthorsId.cpp" />
+    <ClCompile Include="UI\Books\ChangeIsbn.cpp" />
+    <ClCompile Include="UI\Books\ChangeName.cpp" />
+    <ClCompile Include="UI\Books\ChangeYear.cpp" />
+    <ClCompile Include="UI\Books\ConfirmBookDeleting.cpp" />
+    <ClCompile Include="UI\Books\ConfirmDeletingAvailable.cpp" />
+    <ClCompile Include="UI\Books\BooksMenu.cpp" />
+    <ClCompile Include="Model\AuthorsCollection.cpp" />
+    <ClCompile Include="Model\BookRecordsCollection.cpp" />
+    <ClCompile Include="Model\BooksCollection.cpp" />
+    <ClCompile Include="Model\Global.cpp" />
+    <ClCompile Include="Model\SplitToWords.cpp" />
+    <ClCompile Include="Model\TicketsCollection.cpp" />
+    <ClCompile Include="Library.cpp" />
+    <ClCompile Include="UI\Readers\AddReader.cpp" />
+    <ClCompile Include="UI\Readers\ChangePhoneNumber.cpp" />
+    <ClCompile Include="UI\Readers\ChangeReadersName.cpp" />
+    <ClCompile Include="UI\Readers\ConfirmDeletingReader.cpp" />
+    <ClCompile Include="UI\Readers\ReadersMenu.cpp" />
+    <ClCompile Include="UI\Tickets\AddTicket.cpp" />
+    <ClCompile Include="UI\Tickets\ChangeReturnDate.cpp" />
+    <ClCompile Include="UI\Tickets\ChangeTicketsBookId.cpp" />
+    <ClCompile Include="UI\Tickets\ChangeTicketsReaderId.cpp" />
+    <ClCompile Include="UI\Tickets\ConfirmTicketDeleting.cpp" />
+    <ClCompile Include="UI\Tickets\TicketsMenu.cpp" />
+    <ClCompile Include="View\View.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model\Reader.h" />
+    <ClInclude Include="Model\ReadersCollection.h" />
+    <ClInclude Include="UI\Authors\AddAuthor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Authors\ChangeAuthorsName.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Authors\ConfirmDeletingAuthor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Authors\AuthorsMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\BooksStorage\AddBookRecord.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\BooksStorage\ChangeBookLocation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\BooksStorage\ChangeRecordCount.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\BooksStorage\ChangeRecordId.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\BooksStorage\BooksStorageMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\BooksStorage\ConfirmBookRecordDeleting.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Books\AddBook.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Books\ChangeBookAuthorsId.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Books\ChangeIsbn.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Books\ChangeName.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Books\ChangeYear.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Books\ConfirmBookDeleting.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Books\ConfirmDeletingAvailable.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Books\BooksMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Model\Author.h" />
+    <ClInclude Include="Model\AuthorsCollection.h" />
+    <ClInclude Include="Model\Book.h" />
+    <ClInclude Include="Model\BookRecord.h" />
+    <ClInclude Include="Model\BookRecordsCollection.h" />
+    <ClInclude Include="Model\BooksCollection.h" />
+    <ClInclude Include="Model\Global.h" />
+    <ClInclude Include="Model\Human.h" />
+    <ClInclude Include="Model\SplitToWords.h" />
+    <ClInclude Include="Model\Ticket.h" />
+    <ClInclude Include="Model\TicketsCollection.h" />
+    <ClInclude Include="Library.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Readers\AddReader.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Readers\ChangePhoneNumber.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Readers\ChangeReadersName.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Readers\ConfirmDeletingReader.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Readers\ReadersMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Tickets\AddTicket.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Tickets\ChangeReturnDate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Tickets\ChangeTicketsBookId.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Tickets\ChangeTicketsReaderId.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Tickets\ConfirmTicketDeleting.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UI\Tickets\TicketsMenu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="View\View.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Authors\AddAuthor.resx">
+      <DependentUpon>UI\Authors\AddAuthor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Authors\ChangeAuthorsName.resx">
+      <DependentUpon>UI\Authors\ChangeAuthorsName.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Authors\ConfirmDeletingAuthor.resx">
+      <DependentUpon>UI\Authors\ConfirmDeletingAuthor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Authors\AuthorsMenu.resx">
+      <DependentUpon>UI\Authors\AuthorsMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BooksStorage\AddBookRecord.resx">
+      <DependentUpon>UI\BooksStorage\AddBookRecord.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BooksStorage\ChangeBookLocation.resx">
+      <DependentUpon>UI\BooksStorage\ChangeBookLocation.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BooksStorage\ChangeRecordCount.resx">
+      <DependentUpon>UI\BooksStorage\ChangeRecordCount.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BooksStorage\ChangeRecordId.resx">
+      <DependentUpon>UI\BooksStorage\ChangeRecordId.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BooksStorage\BooksStorageMenu.resx">
+      <DependentUpon>UI\BooksStorage\BooksStorageMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BooksStorage\ConfirmBookRecordDeleting.resx">
+      <DependentUpon>UI\BooksStorage\ConfirmBookRecordDeleting.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Books\AddBook.resx">
+      <DependentUpon>UI\Books\AddBook.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Books\ChangeBookAuthorsId.resx">
+      <DependentUpon>UI\Books\ChangeBookAuthorsId.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Books\ChangeIsbn.resx">
+      <DependentUpon>UI\Books\ChangeIsbn.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Books\ChangeName.resx">
+      <DependentUpon>UI\Books\ChangeName.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Books\ChangeYear.resx">
+      <DependentUpon>UI\Books\ChangeYear.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Books\ConfirmBookDeleting.resx">
+      <DependentUpon>UI\Books\ConfirmBookDeleting.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Books\ConfirmDeletingAvailable.resx">
+      <DependentUpon>UI\Books\ConfirmDeletingAvailable.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Books\BooksMenu.resx">
+      <DependentUpon>UI\Books\BooksMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library.resx">
+      <DependentUpon>Library.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Readers\AddReader.resx">
+      <DependentUpon>UI\Readers\AddReader.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Readers\ChangePhoneNumber.resx">
+      <DependentUpon>UI\Readers\ChangePhoneNumber.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Readers\ChangeReadersName.resx">
+      <DependentUpon>UI\Readers\ChangeReadersName.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Readers\ConfirmDeletingReader.resx">
+      <DependentUpon>UI\Readers\ConfirmDeletingReader.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Readers\ReadersMenu.resx">
+      <DependentUpon>UI\Readers\ReadersMenu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Tickets\AddTicket.resx">
+      <DependentUpon>UI\Tickets\AddTicket.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Tickets\ChangeReturnDate.resx">
+      <DependentUpon>UI\Tickets\ChangeReturnDate.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Tickets\ChangeTicketsBookId.resx">
+      <DependentUpon>UI\Tickets\ChangeTicketsBookId.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Tickets\ChangeTicketsReaderId.resx">
+      <DependentUpon>UI\Tickets\ChangeTicketsReaderId.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Tickets\ConfirmTicketDeleting.resx">
+      <DependentUpon>UI\Tickets\ConfirmTicketDeleting.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Tickets\TicketsMenu.resx">
+      <DependentUpon>UI\Tickets\TicketsMenu.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
